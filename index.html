@@ -1,0 +1,61 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="manifest" href="manifest.json">
+        <title>Schedule</title>
+    </head>
+    <body>
+        <header>
+            <div class="navWrapper">
+                <nav id="navID">
+                        <div class="logo">
+                            <a href="index.html">PWA project</a>
+                        </div>
+                        <ul class="navLinks navHidden">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Add event</a></li>
+                            <li><a href="#">Log out</a></li>
+                        </ul>
+                        <div class="navBurger">
+                            <div class="burgerLine1"></div>
+                            <div class="burgerLine2"></div>
+                            <div class="burgerLine3"></div>
+                        </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <div class="callendarWrapper">
+                    <div class="yearMonth">
+                        <button class="ymBtn" id="Previous" ><i class="fas fa-caret-left"></i></button>
+                            <div id="yearMonth"><span id="Month"></span><span id="Year"></span></div>
+                        <button class="ymBtn" id="Next"><i class="fas fa-caret-right"></i></button>
+                    </div>
+                    <ul class="weekdays">
+                        <li id="Mon"></li>
+                        <li id="Tue"></li>
+                        <li id="Wed"></li>
+                        <li id="Thu"></li>
+                        <li id="Fri"></li>
+                        <li id="Sat"></li>
+                        <li id="Sun"></li>
+                    </ul>
+                    <div id="MobileWeek">
+                        <button class="weekBtn" id="PreviousWeek" ><i class="fas fa-caret-left"></i></button>
+                        <div id="CurrentWeek"></div>
+                        <button class="weekBtn" id="NextWeek"><i class="fas fa-caret-right"></i></button>
+                    </div>
+                    <div id="MobileCallendar"></div>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+        <script src="sw.js"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </body>
+    </html>

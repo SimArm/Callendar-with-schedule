@@ -1,0 +1,417 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.navWrapper {
+  width: 100%;
+  background-color: #1b2a3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 7vh;
+  width: 80%;
+}
+
+nav div a {
+  color: #d8d8d8;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+nav .navLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 25%;
+}
+
+nav .navLinks li a {
+  color: #d8d8d8;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+nav .navBurger div {
+  width: 25px;
+  height: 2.5px;
+  margin: 5px;
+  background: #d8d8d8;
+}
+
+.navBurger {
+  display: none;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#MobileWeek {
+  display: none;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+}
+
+#MobileWeek .weekBtn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+#MobileCallendar {
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.callendarWrapper {
+  padding: 20px 0;
+  width: 80%;
+  height: 100%;
+}
+
+.callendarWrapper #weekdaysNames {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.callendarWrapper .weekdays {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: Verdana, Geneva, sans-serif;
+  height: 100%;
+}
+
+.callendarWrapper .weekdays li {
+  width: calc(100% / 7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.callendarWrapper .weekdays li h4 {
+  font-family: Verdana, Geneva, sans-serif;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.callendarWrapper .weekdays li div {
+  background: rgba(167, 167, 167, 0.185);
+  border: 1px rgba(90, 90, 90, 0.356) solid;
+  border-radius: 3%;
+  margin: 2px;
+  height: calc((100% - 40px) / 6);
+}
+
+.callendarWrapper .weekdays li div .dayHeader {
+  background: #144663;
+  height: auto;
+  border: 0;
+  margin: 0;
+  padding-left: 10%;
+  color: #d8d8d8;
+  text-decoration: none;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+.callendarWrapper .weekdays li div ul li {
+  font-size: 12px;
+  width: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+  padding-left: 2px;
+}
+
+.callendarWrapper .yearMonth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 18px;
+}
+
+.callendarWrapper .yearMonth .ymBtn {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  nav {
+    width: 90%;
+  }
+  nav .navLinks {
+    width: 30%;
+  }
+  .callendarWrapper {
+    width: 100%;
+    height: 82vh;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    width: 90%;
+    min-height: 9vh;
+  }
+  nav .navLinks {
+    position: absolute;
+    right: 0;
+    height: 93vh;
+    top: 7vh;
+    background-color: rgba(27, 42, 58, 0.9);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 40%;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  nav .navLinks li {
+    opacity: 0;
+  }
+  .navHidden {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .navBurger {
+    display: block;
+  }
+  .callendarWrapper {
+    padding: 0;
+    width: 100%;
+  }
+  .callendarWrapper #weekdaysNames {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .callendarWrapper .weekdays {
+    display: none;
+  }
+  .callendarWrapper .yearMonth {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .callendarWrapper #MobileWeek {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .callendarWrapper #MobileWeek #CurrentWeek {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .callendarWrapper #MobileCallendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100%;
+  }
+  .callendarWrapper #MobileCallendar div {
+    background: rgba(167, 167, 167, 0.185);
+  }
+  .callendarWrapper #MobileCallendar div .dayHeader {
+    background: #144663;
+    height: auto;
+    border: 0;
+    margin: 0;
+    padding-left: 10%;
+    color: #d8d8d8;
+    text-decoration: none;
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  .callendarWrapper #MobileCallendar div ul li {
+    font-size: 12px;
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    padding-left: 2px;
+  }
+}
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes navBurgerFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes navBurgerFade {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
